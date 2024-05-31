@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon"  type="image/jpeg" href="icom.jpeg">
+<link rel="stylesheet" href="adForm.css">
+<link rel="stylesheet" href="style.css">
+
+<title>Admission Form </title>
+</head>
+<body>
+    
+<div class="container">
+    <div class="adf">
+        
+    <h2>Admission Form </h2>
+    <form action="#" method="post">
+        <label for="name">Student Name</label>
+        <input type="text" id="name" name="name" required>
+
+       
+        
+
+
+         <label for="name">Father Name</label>
+        <input type="text" id="fname" name="fathername" required>
+        
+        <label for="name">Mother Name</label>
+        <input type="text" id="Mname" name="mothername" required>
+        
+        <label for="class">Class</label>
+        <select id="class" name="class" required>
+        <option value="">Select Class</option>
+        <option >Nursury</option>
+        <option >L.K.G</option>
+        <option >U.K.G</option>
+        <option >First</option>
+        <option >Second</option>
+<option >Third</option>
+<option >Fourth</option>
+<option >Fifth</option>
+<option >Sixth</option>
+<option >Seventh</option>
+<option >Eighth</option>
+<option >ninth</option>
+<option >Tenth(High school)</option>
+<option >Eleventh</option>
+<option>twelfth(senior secondary)</option>
+     </select>
+
+        <label for="d.o.b">D.O.B</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        
+        <label for="category">Category:- </label>
+        <select id="category" name="category" required>
+            <option value="">Select your category</option>
+              <option value="SC">ST</option>
+              <option value="ST">SC</option>
+              <option value="OBC">OBC</option>
+              <option value="General">General</option>
+           </select>
+
+           <label for="phone">Phone</label>
+           <input type="tel" id="phone" name="phone" required>
+           
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+       
+        <label for="address">Address:-</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+        
+        <input type="checkbox" name="declare" required>
+        I declare that I have read and filled the above information, so if the information given by me is incorrect, you have the right to cancel without informing me.
+
+
+        <br><br>
+     
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+
+<div class="form-group" style="float: right;">
+    <label class="lable"> Photo </label>
+<div style="border: 1px solid black; height: 150px; width: 150px;  background: #F5FAFF;">
+ <img id="output"  width="150" height="150" / style="display:none">
+</div>
+
+<input type="file" name="image" id="image" onchange="loadFile(event)" class="form-control" required accept="image/*" / style="width:150px;" required>
+
+
+
+
+
+</div> 
+
+
+
+</div>
+
+
+
+
+</body>
+</html>
